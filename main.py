@@ -1,10 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse, PlainTextResponse
-import pymysql
-import pymysql.cursors
 from config import host, user, password, db_name
 import requests
-import telebot
 
 app = FastAPI()
 
